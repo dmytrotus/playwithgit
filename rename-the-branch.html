@@ -1,0 +1,13 @@
+####how to rename the branch
+
+
+//for rename the branch i need to enter the current branch and
+git branch -m feature/my-new-name
+//or of i am in the another branch i need use 
+git branch -m feature/my-old-name feature/my-new-name
+
+//after that i need to push the branch into the remote
+//if I have already branch with old nane on the remote, I need to push new branch
+git push origin -u feature/my-new-name
+//after that i need to delete the old branch from the remote
+git push origin --delete feature/my-old-name
